@@ -70,7 +70,7 @@ Outbound:
 
 ![security groups](Assets/security-groups.png)
 
-![security groups](Assets/security2-groups.png)
+![security groups](Assets/security-groups2.png)
 
 ---
 
@@ -109,14 +109,14 @@ echo "<!DOCTYPE html>
 
 ![EC2 instance running](Assets/ec2-instance-running.png)
 
-![EC2 instance running](Assets/EC2-Instance1-Terminal)
+![EC2 instance running](Assets/EC2-Instance1-Terminal.png)
 
-![EC2 instance running](Assets/EC2-Instance2-Terminal)
+![EC2 instance running](Assets/EC2-Instance2-Terminal.png)
 
 
 ---
 
-### **Step 3 - Create an AMI from this instance
+### **Step 3 - Create an AMI from this instance**
 
 1. EC2 → Instances → Select ElevateLab-Web-Instance → Actions → Image and templates → Create image
 2. Image name: ElevateLab-Web-AMI
@@ -130,7 +130,7 @@ echo "<!DOCTYPE html>
 
 ---
 
-### **Step 4 - Launch Templates
+### **Step 4 - Launch Templates**
 
 **Screenshot:**
 
@@ -138,7 +138,7 @@ echo "<!DOCTYPE html>
 
 ---
 
-### **Step 5 - Create Application Load Balancer (ALB)
+### **Step 5 - Create Application Load Balancer (ALB)**
 
 1. Go to EC2 → Load Balancers → Create Load Balancer → Application Load Balancer
 2. Name: ElevateLab-ALB
@@ -157,7 +157,7 @@ echo "<!DOCTYPE html>
 
 ---
 
-### **Step 6 - Register Instance to Target Group
+### **Step 6 - Register Instance to Target Group**
 
 1. EC2 → Target Groups → Select ElevateLab-TG
 2. Targets → Register Targets
@@ -170,7 +170,7 @@ echo "<!DOCTYPE html>
 
 ---
 
-### **Step 7 — Create Auto Scaling Group (ASG)
+### **Step 7 — Create Auto Scaling Group (ASG)**
 
 1. Go to EC2 → Auto Scaling Groups → Create Auto Scaling Group
 2. Name: ElevateLab-ASG
@@ -188,9 +188,10 @@ echo "<!DOCTYPE html>
 
 ---
 
-### **Step 8 - Test Load Balancer
+### **Step 8 - Test Load Balancer**
 
 Open browser → **http://<ALB-DNS-NAME>**
+
 You’ll see:
 ```
 Welcome to ElevateLab Web Server
