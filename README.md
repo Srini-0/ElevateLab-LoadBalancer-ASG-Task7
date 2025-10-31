@@ -55,16 +55,16 @@ Open EC2 → Security Groups → Create security group.
 
 1. VPC: your VPC
 2. Inbound rules:
-  -SSH — TCP 22 — Source: My IP
-  -HTTP — TCP 80 — Source: ElevateLab-ALB-SG (you can set to 0.0.0.0/0 for testing, but best use ALB SG)
-3. Outbound: default (allow all)
+   SSH — TCP 22 — Source: My IP
+   HTTP — TCP 80 — Source: ElevateLab-ALB-SG (you can set to 0.0.0.0/0 for testing, but best use ALB SG)
+4. Outbound: default (allow all)
 
 **ElevateLab-ALB-SG** (for ALB)
 
 4. Inbound:
-  -HTTP — TCP 80 — Source: 0.0.0.0/0 (ALB must accept public traffic)
+  HTTP — TCP 80 — Source: 0.0.0.0/0 (ALB must accept public traffic)
 5. Outbound:
-  -HTTP — TCP 80 — Destination: 0.0.0.0/0
+  HTTP — TCP 80 — Destination: 0.0.0.0/0
   
 **Screenshot:**
 
